@@ -36,12 +36,12 @@ const Authentic: React.FC = () => {
             confections that celebrate tradition and flavor. Rooted in the heart
             of Homs, Syria, our passion for quality and craftsmanship is
             reflected in every bite of our handcrafted sweets. From rich baklava
-            layered with premium nuts to our signature "Maloukia" made with
-            dates and nuts, we bring you an exquisite selection of treats that
-            honor our heritage.
+            layered with premium nuts to our signature Maloukia made with dates
+            and nuts, we bring you an exquisite selection of treats that honor
+            our heritage.
           </p>
           <p className="w-full max-w-[600px] font-playfair text-sm font-[300] capitalize tracking-[1px] text-[#000] md:text-base">
-            Whether you're savoring a piece with family or gifting a loved one,
+            Whether you`re savoring a piece with family or gifting a loved one,
             Emesa Sweets promises a taste of tradition, made with care and the
             finest ingredients.
           </p>
@@ -50,7 +50,7 @@ const Authentic: React.FC = () => {
           <Link href={"/table-booking"}>
             <Button
               className={
-                "font-open_sans rounded-none border border-[#000] bg-[#000] px-7 py-5 text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
+                "rounded-none border border-[#000] bg-[#000] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
               }
             >
               Reserve
