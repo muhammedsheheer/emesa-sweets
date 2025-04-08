@@ -27,7 +27,7 @@ const Follow: React.FC = () => {
                 className="h-[300px] w-full object-cover md:h-[350px]"
               />
               <div className="flex items-center justify-center bg-[#0A6657]">
-                <p className="font-sofia_sans w-full max-w-[250px] py-12 text-lg font-[600] uppercase tracking-[2px] text-[#fff] md:text-2xl">
+                <p className="w-full max-w-[250px] py-12 font-sofia_sans text-lg font-[600] uppercase tracking-[2px] text-[#fff] md:text-2xl">
                   Follow us on Instagram for a sweet glimpse into our
                   handcrafted Syrian delights and latest creations!
                 </p>
@@ -41,7 +41,7 @@ const Follow: React.FC = () => {
                   className="w-20"
                 />
                 <Link
-                  href={""}
+                  href={"https://www.instagram.com/emesa.sweet"}
                   className="font-sofia_sans text-lg font-[600] uppercase tracking-[2.8px] text-[#fff] md:text-2xl"
                   target="_blank"
                 >

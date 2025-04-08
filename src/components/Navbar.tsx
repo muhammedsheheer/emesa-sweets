@@ -68,14 +68,14 @@ const Navbar = ({
             >
               Menu
             </Link>
-            <Link
+            {/* <Link
               href={""}
               className={
                 "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
               }
             >
               Products
-            </Link>
+            </Link> */}
             <Link
               href={"/about-us"}
               className={

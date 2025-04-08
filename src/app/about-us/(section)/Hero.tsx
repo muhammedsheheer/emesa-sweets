@@ -11,24 +11,23 @@ const Hero = ({}) => {
           <div className="flex w-full items-center justify-center lg:w-1/2">
             <div className="mt-20 flex flex-col items-start gap-6 lg:mt-0 lg:w-8/12">
               <h1 className="font-oswald text-5xl font-semibold leading-[66px] text-[#000] lg:text-6xl">
-                Welcome to Levant
-                <br /> A Symphony of Flavors
+                Welcome to Emesa Sweets
+                <br /> A Journey of Sweet Elegance
               </h1>
               <p className="font-manrope font-normal text-[#000]">
-                At Levant, every dish is a celebration of rich traditions and
-                bold flavors. From the finest ingredients to time-honored
-                recipes, we bring you an unforgettable dining experience
-                inspired by the heart of Middle Eastern and Mediterranean
-                cuisine. Whether you`re indulging in perfectly grilled kebabs,
-                savoring aromatic spices, or treating yourself to a sweet
-                delight, each bite tells a story of authenticity, passion, and
-                culinary mastery.
+                At Emesa Sweets, every treat is a tribute to timeless traditions
+                and exquisite taste. From premium ingredients to artisanal
+                recipes passed down through generations, we offer a luxurious
+                experience rooted in the heart of Middle Eastern confectionery.
+                Whether you`re savoring delicate baklava, rich maamoul, or our
+                signature handcrafted delights, each bite is a moment of joy,
+                crafted with passion, authenticity, and love.
               </p>
             </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:mt-16 lg:w-1/2">
             <Image
-              src="/images/about-us/image1.jpg"
+              src="/images/about-us/image2.jpg"
               width={951}
               height={975}
               alt="hero"

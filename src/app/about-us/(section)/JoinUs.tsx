@@ -7,7 +7,7 @@ const JoinUs = ({}) => {
     <section
       className="relative flex h-screen w-full items-center justify-center opacity-90"
       style={{
-        backgroundImage: `url('/images/about-us/image7.jpg')`,
+        backgroundImage: `url('/images/about-us/image4.jpg')`,
         backgroundSize: "cover",
       }}
     >

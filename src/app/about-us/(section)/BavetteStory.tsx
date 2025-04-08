@@ -5,7 +5,7 @@ const BavetteStory = ({}) => {
     <section className="relative flex h-full w-full items-center justify-center bg-[#fff] p-4 lg:py-16">
       <div className="flex h-full w-full flex-col items-center justify-center gap-11 bg-[#fff]">
         <h2 className="font-oswald text-center text-8xl text-[#000] md:left-[15%] md:text-8xl">
-          The Levant
+          The Emesa
           <br />
           Story
         </h2>
