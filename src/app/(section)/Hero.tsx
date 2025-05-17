@@ -18,9 +18,9 @@ const Hero: React.FC = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className="absolute inset-0 z-10 bg-black/30" />
+      <div className="absolute inset-0 z-10 bg-black/50" />
 
-      <h1 className="relative z-20 px-2 text-center font-playfair text-5xl font-[500] capitalize text-[#427C73] md:text-8xl md:tracking-[-5px]">
+      <h1 className="relative z-20 px-2 text-center font-playfair text-5xl font-[500] capitalize text-[#fff] md:text-8xl md:tracking-[-5px]">
         Authentic syrian sweets
       </h1>
     </section>

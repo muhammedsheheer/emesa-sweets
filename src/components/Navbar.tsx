@@ -55,7 +55,7 @@ const Navbar = ({
             <Link
               href={"/"}
               className={
-                "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
+                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#fff] hover:underline"
               }
             >
               Home
@@ -63,7 +63,7 @@ const Navbar = ({
             <Link
               href={"/menu"}
               className={
-                "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
+                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#fff] hover:underline"
               }
             >
               Menu
@@ -71,7 +71,7 @@ const Navbar = ({
             {/* <Link
               href={""}
               className={
-                "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
+                "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#fff] hover:underline"
               }
             >
               Products
@@ -79,7 +79,7 @@ const Navbar = ({
             <Link
               href={"/about-us"}
               className={
-                "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
+                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#fff] hover:underline"
               }
             >
               About
@@ -88,7 +88,7 @@ const Navbar = ({
             <Link
               href={"/contact"}
               className={
-                "font-sofia_sans text-center text-sm font-[700] uppercase tracking-[2.106px] text-[#323232] hover:underline"
+                "text-center font-sofia_sans text-sm font-[700] uppercase tracking-[2.106px] text-[#fff] hover:underline"
               }
             >
               Contact us
@@ -98,7 +98,7 @@ const Navbar = ({
             <Link href={"/table-booking"}>
               <Button
                 className={
-                  "font-open_sans rounded-none border border-[#000] bg-[#000] px-7 py-5 text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
+                  "rounded-none border border-[#000] bg-[#000] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
                 }
               >
                 Reserve

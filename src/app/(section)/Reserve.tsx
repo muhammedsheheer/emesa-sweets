@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Reserve: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const Reserve: React.FC = () => {
           <Link href={"/table-booking"}>
             <Button
               className={
-                "font-open_sans rounded-none border border-[#000] bg-[#000] px-7 py-5 text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
+                "rounded-none border border-[#000] bg-[#000] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
               }
             >
               Reserve

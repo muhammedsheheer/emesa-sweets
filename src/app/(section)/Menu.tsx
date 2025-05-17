@@ -1,31 +1,39 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const data = [
   {
-    name: "ROASTED LAMB RUMP",
-    description: "Grilled lamb cutlets, pomegranate glaze, butternut squash",
-    price: 25,
+    name: "Apple Juice",
+    price: 4.0,
   },
   {
-    name: "PAN SEARED SEA BASS",
-    description: "Saffron and mussel's broth, new potatoes, edamame beans",
-    price: 38,
+    name: "Americano",
+    price: 2.99,
   },
   {
-    name: "KING PRAWNS AND LOBSTER",
-    description: "Creamy saffron, sauce Vierge",
-    price: 38,
+    name: "Cheese with Eggs",
+    price: 2.99,
   },
   {
-    name: "BEEF BURGER MEAL",
-    description: "Classic greek salad, barrel aged feta cheese, bread",
-    price: 32,
+    name: "Chocolate Milkshake",
+    price: 4.99,
   },
   {
-    name: "ROASTED LAMB RUMP",
-    description: "Grilled lamb cutlets, pomegranate glaze, butternut squash",
-    price: 25,
+    name: "Baba Ghanouj",
+    price: 3.99,
+  },
+  {
+    name: "Banana Split",
+    price: 4.99,
+  },
+  {
+    name: "Arabic Ice Cream",
+    price: 4.0,
+  },
+  {
+    name: "Cupcakes",
+    price: 3.0,
   },
 ];
 
@@ -80,14 +88,9 @@ const Menu: React.FC = () => {
                     {item.name}
                   </h1>
                   <h1 className="w-[20%] text-right font-poppins text-base font-[400] uppercase tracking-[0.812px] text-white md:text-lg">
-                    ${item.price}
+                    £{item.price}
                   </h1>
                 </div>
-
-                {/* Description */}
-                <p className="w-[60%] font-poppins text-sm font-[300] text-white md:text-base">
-                  {item.description}
-                </p>
               </div>
             ))}
           </div>

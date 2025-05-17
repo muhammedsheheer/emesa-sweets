@@ -1,19 +1,17 @@
 "use client";
 import EmblaCarousel from "@/app/(section)/(special)/MenuCarousel";
-import { Button } from "@/components/ui/button";
 import { useRestaurant } from "@/context/RestaurantContext";
 import type { EmblaOptionsType } from "embla-carousel";
-import Image from "next/image";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 
 const Special = ({}) => {
   const { modelData } = useRestaurant();
   return (
-    <section className="relative flex h-full w-full justify-center bg-[#fff] py-12">
+    <section className="relative flex h-full w-full justify-center bg-[#000] py-12">
       <div className="absolute right-[10%] top-[35%] hidden md:block">
-        <p className="w-full max-w-[280px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#000] md:text-start md:text-base">
+        <p className="w-full max-w-[280px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:text-start md:text-base">
           Explore our menu for a delicious selection of freshly prepared meals,
           from hearty breakfasts to indulgent treats.
         </p>
@@ -24,10 +22,10 @@ const Special = ({}) => {
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="flex flex-col items-center justify-center gap-2">
               <div className="flex flex-col items-center justify-center gap-4 pb-4 md:flex-row md:gap-0 md:pb-6">
-                <h6 className="text-center font-playfair text-5xl font-[500] uppercase tracking-[-4px] text-[#000] md:text-7xl">
+                <h6 className="text-center font-playfair text-5xl font-[500] uppercase tracking-[-4px] text-[#fff] md:text-7xl">
                   Our signatures{" "}
                 </h6>
-                <p className="w-full max-w-[350px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#000] md:hidden md:text-start md:text-base">
+                <p className="w-full max-w-[350px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:hidden md:text-start md:text-base">
                   Explore our menu for a delicious selection of freshly prepared
                   meals, from hearty breakfasts to indulgent treats.
                 </p>

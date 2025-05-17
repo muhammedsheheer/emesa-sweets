@@ -76,6 +76,7 @@ import {
 } from "@/components/ui/carousel";
 import { useRestaurant } from "@/context/RestaurantContext";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Reviews = ({}) => {
   const { reviews } = useRestaurant();
@@ -96,7 +97,7 @@ const Reviews = ({}) => {
                 {reviews.map((review, index) => (
                   <CarouselItem
                     key={index}
-                    className={`flex w-full basis-full flex-col items-center justify-center gap-6 rounded-none border border-[#fff] py-6 md:basis-1/3 md:py-12`}
+                    className={`flex h-[400px] w-full basis-full flex-col items-center justify-center gap-6 rounded-none border border-[#fff] py-6 md:basis-1/3 md:py-12`}
                   >
                     <div className="flex flex-col items-center justify-center gap-6 bg-transparent px-6 pb-4">
                       <div className="flex w-full justify-center">
@@ -107,7 +108,7 @@ const Reviews = ({}) => {
                         )}
                       </div>
                       <div className="flex flex-col gap-4">
-                        <p className="font-cormorant text-center text-sm font-[400] text-[#fff] md:text-base">
+                        <p className="text-center font-cormorant text-sm font-[400] text-[#fff] md:text-base">
                           {review.text.text}
                         </p>
                         <p className="text-center font-playfair text-sm font-[500] tracking-[0.54] text-[#fff] md:text-base">
