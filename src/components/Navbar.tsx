@@ -98,7 +98,7 @@ const Navbar = ({
             <Link href={"/table-booking"}>
               <Button
                 className={
-                  "rounded-none border border-[#000] bg-[#000] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#fff] hover:bg-[#222] hover:text-[#fff]"
+                  "rounded-none border border-[#fff] bg-[#fff] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#000] hover:bg-[#222] hover:text-[#fff]"
                 }
               >
                 Reserve

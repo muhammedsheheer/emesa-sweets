@@ -39,7 +39,7 @@ const data = [
 
 const Menu: React.FC = () => {
   return (
-    <section className="h-full w-full bg-[#fff] py-0 md:py-12">
+    <section className="h-full w-full bg-[#111] py-0 md:py-12">
       <div className="flex flex-col gap-4 md:flex-row">
         {/* Left Image */}
         <div className="w-[100px] md:w-[15%]">
@@ -53,7 +53,13 @@ const Menu: React.FC = () => {
         </div>
 
         {/* Menu Items Section */}
-        <div className="relative md:w-[70%]">
+        <motion.div
+          className="relative md:w-[70%]"
+          initial={{ opacity: 0, y: 50, scale: 0.8 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: false, amount: 0.5 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
           {/* <div className="absolute inset-0 flex flex-col items-start justify-center gap-4 px-4 md:ml-56 md:px-0">
             {data.map((item, index) => (
               <div
@@ -103,7 +109,7 @@ const Menu: React.FC = () => {
             alt="frame"
             className="h-[800px] w-full md:h-[660px]"
           />
-        </div>
+        </motion.div>
 
         {/* Right Image */}
         <div className="flex h-[300px] w-full justify-end md:w-[15%]">

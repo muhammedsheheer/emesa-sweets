@@ -89,34 +89,36 @@ const Reviews = ({}) => {
             </h3>
           </div>
         </div>
-        <div className="flex w-full items-center justify-center">
+        <div className="flex h-[400px] w-full items-center justify-center">
           {reviews && (
             <Carousel className="ml-6 mr-0 w-full md:ml-0 md:mr-12">
               <CarouselContent className="flex w-full justify-center gap-4 md:ml-4">
-                {reviews.map((review, index) => (
-                  <CarouselItem
-                    key={index}
-                    className={`flex w-full basis-full flex-col items-center justify-center gap-6 rounded-none border border-[#fff] py-6 md:basis-1/3 md:py-12`}
-                  >
-                    <div className="flex flex-col items-center justify-center gap-6 bg-transparent px-6 pb-4">
-                      <div className="flex w-full justify-center">
-                        {Array.from({ length: review.rating }).map(
-                          (_, index) => (
-                            <Icons.star key={index} className="text-[#fff]" />
-                          ),
-                        )}
+                {reviews
+                  .filter((review) => review.rating >= 4)
+                  .map((review, index) => (
+                    <CarouselItem
+                      key={index}
+                      className={`flex w-full basis-full flex-col items-center justify-center gap-6 rounded-none border border-[#fff] py-6 md:basis-1/3 md:py-12`}
+                    >
+                      <div className="flex flex-col items-center justify-center gap-6 bg-transparent px-6 pb-4">
+                        <div className="flex w-full justify-center">
+                          {Array.from({ length: review.rating }).map(
+                            (_, index) => (
+                              <Icons.star key={index} className="text-[#fff]" />
+                            ),
+                          )}
+                        </div>
+                        <div className="flex flex-col gap-4">
+                          <p className="text-center font-cormorant text-sm font-[400] text-[#fff] md:text-base">
+                            {review.text.text}
+                          </p>
+                          <p className="text-center font-playfair text-sm font-[500] tracking-[0.54] text-[#fff] md:text-base">
+                            {review.authorAttribution.displayName}
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex flex-col gap-4">
-                        <p className="font-cormorant text-center text-sm font-[400] text-[#fff] md:text-base">
-                          {review.text.text}
-                        </p>
-                        <p className="text-center font-playfair text-sm font-[500] tracking-[0.54] text-[#fff] md:text-base">
-                          {review.authorAttribution.displayName}
-                        </p>
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
+                    </CarouselItem>
+                  ))}
               </CarouselContent>
               <div className="group absolute -bottom-12 left-1/2 flex w-fit -translate-x-1/2 transform items-center gap-2 pb-8 transition-transform duration-300 ease-in-out">
                 <CarouselPrevious className="border-[#47887D] text-[#47887D] transition-transform duration-300 ease-in-out group-hover:-translate-x-2" />

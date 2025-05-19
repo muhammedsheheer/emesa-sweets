@@ -68,17 +68,17 @@ const Contact = ({}) => {
 
   return (
     <section
-      className="flex h-full w-full flex-col items-center justify-center bg-[#fff]"
+      className="flex h-full w-full flex-col items-center justify-center bg-[#000]"
       id="contact"
     >
       <div className="flex h-full w-full max-w-[1300px] flex-col gap-[2.5rem] px-0 py-12 pl-0 md:px-2 md:py-24">
         <div className="flex w-full flex-col lg:flex-row">
-          <div className="flex w-full flex-col gap-8 bg-[#fff] px-6 lg:w-1/2 lg:px-28">
+          <div className="flex w-full flex-col gap-8 bg-[#000] px-6 lg:w-1/2 lg:px-28">
             <div className="flex flex-col gap-8">
-              <p className="font-bai text-lg leading-[4px] text-[#000]">
+              <p className="font-bai text-lg leading-[4px] text-[#fff]">
                 Contact Us
               </p>
-              <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#000] lg:text-5xl">
+              <h1 className="font-forum text-4xl font-medium uppercase leading-[50px] tracking-[5px] text-[#fff] lg:text-5xl">
                 Get in
                 <br /> Touch
               </h1>
@@ -87,19 +87,19 @@ const Contact = ({}) => {
               <div className="flex gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <MapPin className="text-[#000]" />
+                    <MapPin className="text-[#fff]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link href={"https://g.co/kgs/X21HVq3"} target="_blank">
-                    <p className="text-[#000]">
+                    <p className="text-[#fff]">
                       7 Walmer St E, Manchester <br /> M14 5SS, United Kingdom
                     </p>
                   </Link>
                   <Link href={"https://g.co/kgs/X21HVq3"} target="_blank">
-                    <p className="flex items-center gap-2 text-sm text-[#000]">
+                    <p className="flex items-center gap-2 text-sm text-[#fff]">
                       <span>Get Direction</span>
-                      <ArrowRight className="text-[#000]" />
+                      <ArrowRight className="text-[#fff]" />
                     </p>
                   </Link>
                 </div>
@@ -117,11 +117,11 @@ const Contact = ({}) => {
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <Phone className="text-[#000]" />
+                    <Phone className="text-[#fff]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <Link href="tel:+01619641411" className="text-[#000]">
+                  <Link href="tel:+01619641411" className="text-[#fff]">
                     0161 964 1411
                   </Link>
                 </div>
@@ -129,13 +129,13 @@ const Contact = ({}) => {
               <div className="flex items-center gap-6">
                 <div>
                   <div className="h-fit w-fit rounded-full p-2">
-                    <Mail className="text-[#000]" />
+                    <Mail className="text-[#fff]" />
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
                   <Link
                     href="mailto:info@emesasweet.com"
-                    className="text-[#000]"
+                    className="text-[#fff]"
                   >
                     info@emesasweet.com
                   </Link>
@@ -146,7 +146,7 @@ const Contact = ({}) => {
                   href={"https://www.instagram.com/emesa.sweet"}
                   target="_blank"
                 >
-                  <Icons.instagram className="text-[#000]" />
+                  <Icons.instagram className="text-[#fff]" />
                 </Link>
                 <Link
                   href={
@@ -154,10 +154,10 @@ const Contact = ({}) => {
                   }
                   target="_blank"
                 >
-                  <Icons.facebook className="text-[#000]" />
+                  <Icons.facebook className="text-[#fff]" />
                 </Link>
                 <Link href={"https://g.co/kgs/X21HVq3"} target="_blank">
-                  <Icons.google className="text-[#000]" />
+                  <Icons.google className="text-[#fff]" />
                 </Link>
                 {/* <Link href='https://www.facebook.com/Istanbulwoolton/'>
                   <Icons.facebook />
@@ -165,7 +165,7 @@ const Contact = ({}) => {
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col bg-[#fff] lg:w-1/2 lg:items-center lg:justify-center">
+          <div className="flex w-full flex-col bg-[#000] lg:w-1/2 lg:items-center lg:justify-center">
             <div className="w-full px-3 lg:w-4/5 lg:px-0">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="h-full">
@@ -180,7 +180,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="First Name"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#fff] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -196,7 +196,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="Phone"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#fff] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -212,7 +212,7 @@ const Contact = ({}) => {
                               <Input
                                 placeholder="Email"
                                 {...field}
-                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-12 rounded-xl bg-[#D9D9D9] text-[#fff] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -224,14 +224,14 @@ const Contact = ({}) => {
                         name="message"
                         render={({ field }) => (
                           <FormItem className="w-full">
-                            <FormLabel className="text-[#000]">
+                            <FormLabel className="text-[#fff]">
                               Reason for contacting (optional)
                             </FormLabel>
                             <FormControl>
                               <Textarea
                                 placeholder="Your Message"
                                 {...field}
-                                className="h-32 rounded-xl bg-[#D9D9D9] text-[#000] placeholder:text-[#000]"
+                                className="h-32 rounded-xl bg-[#D9D9D9] text-[#fff] placeholder:text-[#fff]"
                               />
                             </FormControl>
                             <FormMessage />
@@ -242,7 +242,7 @@ const Contact = ({}) => {
                   </div>
                   <div className="flex w-full flex-col pt-7 lg:flex-row">
                     <Button
-                      className="font-bai w-full rounded-2xl bg-[#000] py-6 text-white hover:bg-[#222]"
+                      className="w-full rounded-2xl bg-[#fff] py-6 font-inter text-[#000] hover:bg-[#222] hover:text-white"
                       disabled={bookTableMutation.isPending}
                     >
                       Contact US
@@ -265,7 +265,7 @@ const Contact = ({}) => {
       <div className="flex w-full overflow-hidden">
         <Image
           className="h-full w-full object-cover lg:h-[500px]"
-          src="/images/about-us/image5.jpg"
+          src="/images/about-us/5.jpg"
           alt="bottom"
           width={966}
           height={96}

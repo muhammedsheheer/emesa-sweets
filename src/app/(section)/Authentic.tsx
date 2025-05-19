@@ -11,11 +11,11 @@ const Authentic: React.FC = () => {
         <div className="relative">
           <div className="absolute inset-0 ml-[2%] flex items-center justify-center">
             <motion.img
-              src={"/images/home/authentic/image.png"}
+              src={"/images/home/authentic/image.jpg"}
               width={281}
               height={74}
               alt="logo"
-              className="h-[65%] w-[60%]"
+              className="h-[65%] w-[60%] rounded-t-full object-cover"
               initial={{ opacity: 0, y: 50, scale: 0.8 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: false, amount: 0.5 }}
@@ -78,11 +78,11 @@ const Authentic: React.FC = () => {
           <div className="relative">
             <div className="absolute inset-0 ml-[2%] flex items-center justify-center">
               <motion.img
-                src={"/images/home/authentic/image.png"}
+                src={"/images/home/authentic/image.jpg"}
                 width={281}
                 height={74}
                 alt="logo"
-                className="h-[65%] w-[60%]"
+                className="h-[65%] w-[60%] rounded-t-full object-cover"
                 initial={{ opacity: 0, y: 50, scale: 0.8 }}
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: false, amount: 0.5 }}

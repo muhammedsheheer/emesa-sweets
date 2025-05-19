@@ -22,13 +22,25 @@ const Special = ({}) => {
           <div className="flex flex-col items-center justify-center gap-2">
             <div className="flex flex-col items-center justify-center gap-2">
               <div className="flex flex-col items-center justify-center gap-4 pb-4 md:flex-row md:gap-0 md:pb-6">
-                <h6 className="text-center font-playfair text-5xl font-[500] uppercase tracking-[-4px] text-[#fff] md:text-7xl">
+                <motion.h5
+                  className="text-center font-playfair text-5xl font-[500] uppercase tracking-[-4px] text-[#fff] md:text-7xl"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   Our signatures{" "}
-                </h6>
-                <p className="w-full max-w-[350px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:hidden md:text-start md:text-base">
+                </motion.h5>
+                <motion.p
+                  className="w-full max-w-[350px] text-center font-playfair text-sm font-[400] lowercase tracking-[1.8px] text-[#fff] md:hidden md:text-start md:text-base"
+                  initial={{ opacity: 0, y: 100 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: false }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
+                >
                   Explore our menu for a delicious selection of freshly prepared
                   meals, from hearty breakfasts to indulgent treats.
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>

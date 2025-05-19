@@ -5,36 +5,60 @@ import { motion } from "framer-motion";
 
 const Follow: React.FC = () => {
   return (
-    <section className="relative h-full w-full bg-[#fff] px-4 pt-2 md:px-12 md:pt-16">
+    <section className="relative h-full w-full bg-[#111] px-4 pt-2 md:px-12 md:pt-16">
       <div className="flex flex-col gap-10 md:gap-24">
         <div className="flex flex-col items-center justify-center gap-2 md:hidden">
           <div></div>
         </div>
         <div className="flex flex-col">
-          <div className="flex w-full flex-col bg-[#fff] md:flex-row">
-            <div className="grid w-full grid-cols-1 gap-4 bg-[#fff] md:grid-cols-3">
-              <Image
-                src={"/images/home/follow/image1.png"}
+          <div className="flex w-full flex-col bg-[#111] md:flex-row">
+            <div className="grid w-full grid-cols-2 gap-4 bg-[#111] md:grid-cols-3">
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/follow/image1.jpg"}
                 width={281}
                 height={74}
                 alt="image"
                 className="h-[300px] w-full object-cover md:h-[350px]"
               />
-              <Image
-                src={"/images/home/follow/image2.png"}
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/follow/image2.jpg"}
                 width={281}
                 height={74}
                 alt="image"
                 className="h-[300px] w-full object-cover md:h-[350px]"
               />
-              <div className="flex items-center justify-center bg-[#0A6657]">
+              <motion.div
+                className="flex items-center justify-center bg-[#0A6657]"
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+              >
                 <p className="w-full max-w-[250px] py-12 font-sofia_sans text-lg font-[600] uppercase tracking-[2px] text-[#fff] md:text-2xl">
                   Follow us on Instagram for a sweet glimpse into our
                   handcrafted Syrian delights and latest creations!
                 </p>
-              </div>
-              <div className="flex flex-col items-center justify-center gap-3 bg-[#0A6657] py-12">
-                <Image
+              </motion.div>
+              <motion.div
+                className="flex flex-col items-center justify-center gap-3 bg-[#0A6657] py-12"
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+              >
+                <motion.img
+                  initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: false, amount: 0.5 }}
+                  transition={{ duration: 1.5, ease: "easeOut" }}
                   src={"/images/home/follow/insta.svg"}
                   width={281}
                   height={74}
@@ -48,16 +72,24 @@ const Follow: React.FC = () => {
                 >
                   @emesa.sweet
                 </Link>
-              </div>
-              <Image
-                src={"/images/home/follow/image3.png"}
+              </motion.div>
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/follow/image3.jpg"}
                 width={281}
                 height={74}
                 alt="image"
                 className="h-[300px] w-full object-cover md:h-[350px]"
               />
-              <Image
-                src={"/images/home/follow/image4.png"}
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/follow/image4.jpg"}
                 width={281}
                 height={74}
                 alt="image"

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const Highlights: React.FC = () => {
   return (
@@ -9,48 +11,84 @@ const Highlights: React.FC = () => {
         <h1 className="text-center font-playfair text-5xl font-[500] uppercase text-[#fff] md:text-7xl md:tracking-[-4px]">
           Explore our menu
         </h1>
-        <div className="flex h-full w-full flex-col gap-8 md:flex-row">
+        <div className="flex h-full w-full flex-col gap-8 px-8 md:flex-row md:px-0">
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[33%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
-                src={"/images/home/highlights/image1.png"}
-                width={677}
-                height={503}
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/highlights/image1.jpg"}
+                width={5686}
+                height={3791}
                 alt="image"
-                className="h-auto w-full rounded-t-full md:h-full"
+                className="h-[300px] w-full rounded-t-full border-[5px] border-[#ba9333] object-cover p-2 md:h-[500px]"
               />
             </div>
-            <h6 className="text-center font-playfair text-2xl font-[400] uppercase text-[#fff] md:text-3xl md:tracking-[1.8px]">
-              DESSERTS & CAKES{" "}
-            </h6>
+            <div>
+              <Link href={"/menu"}>
+                <Button
+                  className={
+                    "rounded-none border border-[#fff] bg-[#fff] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#000] hover:bg-[#222] hover:text-[#fff]"
+                  }
+                >
+                  View Menu
+                </Button>
+              </Link>
+            </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[33%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
-                src={"/images/home/highlights/image2.png"}
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/highlights/image2.jpg"}
                 width={677}
                 height={503}
                 alt="image"
-                className="h-auto w-full md:h-full"
+                className="h-[300px] w-full rounded-t-full border-[5px] border-[#ba9333] object-cover p-2 md:h-[500px]"
               />
             </div>
-            <h6 className="text-center font-playfair text-2xl font-[400] uppercase text-[#fff] md:text-3xl md:tracking-[1.8px]">
-              MANAKEESH{" "}
-            </h6>
+            <div>
+              <Link href={"/menu"}>
+                <Button
+                  className={
+                    "rounded-none border border-[#fff] bg-[#fff] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#000] hover:bg-[#222] hover:text-[#fff]"
+                  }
+                >
+                  View Menu
+                </Button>
+              </Link>
+            </div>
           </div>
           <div className="flex w-full flex-col items-center justify-center gap-6 md:w-[33%]">
             <div className="h-full w-full rounded-t-full">
-              <Image
-                src={"/images/home/highlights/image3.png"}
+              <motion.img
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: false, amount: 0.5 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                src={"/images/home/highlights/image3.jpg"}
                 width={677}
                 height={503}
                 alt="image"
-                className="h-auto w-full md:h-full"
+                className="h-[300px] w-full rounded-t-full border-[5px] border-[#ba9333] object-cover p-2 md:h-[500px]"
               />
             </div>
-            <h6 className="text-center font-playfair text-2xl font-[400] uppercase text-[#fff] md:text-3xl md:tracking-[1.8px]">
-              DRINKS{" "}
-            </h6>
+            <div>
+              <Link href={"/menu"}>
+                <Button
+                  className={
+                    "rounded-none border border-[#fff] bg-[#fff] px-7 py-5 font-open_sans text-xs font-[600] uppercase tracking-[2.08px] text-[#000] hover:bg-[#222] hover:text-[#fff]"
+                  }
+                >
+                  View Menu
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
