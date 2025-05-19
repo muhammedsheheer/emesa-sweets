@@ -22,7 +22,7 @@ const Follow: React.FC = () => {
                 width={281}
                 height={74}
                 alt="image"
-                className="h-[300px] w-full object-cover md:h-[350px]"
+                className="h-[200px] w-full object-cover md:h-[350px]"
               />
               <motion.img
                 initial={{ opacity: 0, y: 50, scale: 0.8 }}
@@ -33,7 +33,7 @@ const Follow: React.FC = () => {
                 width={281}
                 height={74}
                 alt="image"
-                className="h-[300px] w-full object-cover md:h-[350px]"
+                className="h-[200px] w-full object-cover md:h-[350px]"
               />
               <motion.div
                 className="flex items-center justify-center bg-[#0A6657]"
@@ -42,7 +42,7 @@ const Follow: React.FC = () => {
                 viewport={{ once: false, amount: 0.5 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
               >
-                <p className="w-full max-w-[250px] py-12 font-sofia_sans text-lg font-[600] uppercase tracking-[2px] text-[#fff] md:text-2xl">
+                <p className="w-full max-w-[250px] px-2 py-12 font-sofia_sans text-xs font-[600] uppercase tracking-[2px] text-[#fff] md:px-0 md:text-2xl">
                   Follow us on Instagram for a sweet glimpse into our
                   handcrafted Syrian delights and latest creations!
                 </p>
@@ -82,7 +82,7 @@ const Follow: React.FC = () => {
                 width={281}
                 height={74}
                 alt="image"
-                className="h-[300px] w-full object-cover md:h-[350px]"
+                className="h-[200px] w-full object-cover md:h-[350px]"
               />
               <motion.img
                 initial={{ opacity: 0, y: 50, scale: 0.8 }}
@@ -93,7 +93,7 @@ const Follow: React.FC = () => {
                 width={281}
                 height={74}
                 alt="image"
-                className="h-[300px] w-full object-cover md:h-[350px]"
+                className="h-[200px] w-full object-cover md:h-[350px]"
               />
             </div>
           </div>
